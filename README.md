@@ -41,11 +41,8 @@ The Navbar will always be visible but will not take up alot of room. it will dis
 2. socials - help promote the companys social media
 ## Skeleton plane
 I will create a Skeleton/diagram of my pages before I code them.
-![plan1](assets/images/guideplan1.jpg)
-![plan2](assets/images/guideplan2.jpg)
-![plan3](assets/images/guideplan3.jpg)
-![plan4](assets/images/guideplan4.jpg)
-![plan5](assets/images/guideplan5.jpg)
+![plan1](assets/images/zzz.jpg)
+![plan2](assets/images/zzz2.jpg)
 ## Surface plane
 ### colours
 The colors while be bright and friendly and fit a robotic theme. if we give off an intimidating vibe then people will not wont to purchase a robot. Bright colors have a chance to cause irritation potentially at night therefore a night mode will be implimented
