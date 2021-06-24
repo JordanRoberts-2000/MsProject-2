@@ -136,11 +136,22 @@ $(document).ready(function(){
     console.log(localStorage.getItem("fontSize"));
   });
   // ---------- Shop Page ----------
+  //for touch screen users
+  $("#shop h1").on("click", function() {
+    if($(this).hasClass("noStock")){
+      $(this).css("opacity", "0.6");
+      $(this).css("font-size", "2.2em");
+      $(this).css("color", "red");
+      $(this).css("border-color", "red");
+      $(this).html("Out of Stock");
+    }else{
+      $(this).css("opacity", "0.6");
+      $(this).css("font-size", "2.2em");
+    };
   // -- Shop Page, Mouse-hover --
   $("#shop h1").on("mouseover", function() {
     // opacity used instead of class hide, causes error
     if($(this).hasClass("noStock")){
-      console.log("wsoot");
       $(this).css("opacity", "0.6");
       $(this).css("font-size", "2.2em");
       $(this).css("color", "red");
