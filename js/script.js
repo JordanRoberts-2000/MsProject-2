@@ -51,3 +51,64 @@ function initMap() {
     map: map,
   });
 }
+ // ---------- Blog Page ----------
+  // -- Blog page, Button 1 --
+  $("#blogButton0").on("click", function() {
+    time = 5000000000;
+    $("#blogDefault").addClass("hide");
+    $("#article1").removeClass("hide");
+    $("#blog img").addClass("hide");
+    $("#blogImg5").removeClass("hide");
+    $("#selectedTitle").html(blogTitle[0]);
+    $("#selectedTitle").removeClass("hide");
+    $("#movingTitle").css("z-index", -2);
+    setTimeout(function () {
+      $("#blog span").css("background-color", "");
+    $("#blogButton0").css("background-color", "rgba(173, 216, 230, 0.7)");
+    }, 1600);
+  });
+  // -- Blog page, Button 2 --
+  $("#blogButton1").on("click", function() {
+    time = 5000000000;
+    $("#blogDefault").addClass("hide");
+    $("#article2").removeClass("hide");
+    $("#blog img").addClass("hide");
+    $("#blogImg6").removeClass("hide");
+    $("#selectedTitle").html(blogTitle[1]);
+    $("#selectedTitle").removeClass("hide");
+    $("#movingTitle").css("z-index", -2);
+    setTimeout(function () {
+      $("#blog span").css("background-color", "");
+    $("#blogButton1").css("background-color", "rgba(173, 216, 230, 0.7)");
+    }, 1600);
+  });
+  // -- Blog page, Button 3 --
+  $("#blogButton2").on("click", function() {
+    time = 5000000000;
+    $("#blogDefault").addClass("hide");
+    $("#article3").removeClass("hide");
+    $("#blog img").addClass("hide");
+    $("#blogImg7").removeClass("hide");
+    $("#selectedTitle").html(blogTitle[2]);
+    $("#selectedTitle").removeClass("hide");
+    $("#movingTitle").css("z-index", -2);
+    setTimeout(function () {
+      $("#blog span").css("background-color", "");
+    $("#blogButton2").css("background-color", "rgba(173, 216, 230, 0.7)");
+    }, 1600);
+  });
+  // -- Blog page, Button 4 --
+  $("#blogButton3").on("click", function() {
+    time = 5000000000;
+    $("#blogDefault").addClass("hide");
+    $("#article4").removeClass("hide");
+    $("#blog img").addClass("hide");
+    $("#blogImg8").removeClass("hide");
+    $("#selectedTitle").html(blogTitle[3]);
+    $("#selectedTitle").removeClass("hide");
+    $("#movingTitle").css("z-index", -2);
+    setTimeout(function () {
+      $("#blog span").css("background-color", "");
+    $("#blogButton3").css("background-color", "rgba(173, 216, 230, 0.7)");
+    }, 1600);
+  });
