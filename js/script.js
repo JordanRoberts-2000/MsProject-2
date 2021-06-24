@@ -1,3 +1,18 @@
+// ---------- Functions --------
+function current(){
+  if(localStorage.getItem("fontSelect") == "Pangolin"){
+    $(".Pangolin").html("Pangolin(current)");
+    $(".Kirang").html("Kirang Haerang");
+    $(".Helvetica").html("Helvetica");
+  }else if(localStorage.getItem("fontSelect") == "Kirang Haerang"){
+    $(".Pangolin").html("Pangolin");
+    $(".Kirang").html("Kirang Haerang(current)");
+    $(".Helvetica").html("Helvetica");
+  }else if(localStorage.getItem("fontSelect") == "Helvetica"){
+    $(".Pangolin").html("Pangolin");
+    $(".Kirang").html("Kirang Haerang");
+    $(".Helvetica").html("Helvetica(current)");
+  }};
 $(".navigation").on("mouseleave", function() {
     $(".settingsMenu").removeClass("active");
     $(".settings").css("font-size", "100%");
