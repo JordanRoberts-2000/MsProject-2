@@ -10,8 +10,36 @@ body{
   font-size: 1em;
   background-color: rgb(238, 236, 236);
 }
+/* pop ups */
+.Pcontainer{
+  transition: 0.3s;
+  height: 100vh;
+  width: 100vw;
+  background-color:rgba(0, 0, 0, 0.349);
+  position: fixed;
+  z-index: 10;
+}
 .hide{
   display: none;
+}
+.signUp{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  height: 80vh;
+  width: 30vw;
+  border: 3px black solid;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+.FsignUp h1{
+  opacity: 0;
+  font-size: 1em;
 }
 /* ---------- Navbar ---------- */
 nav{
@@ -141,10 +169,24 @@ nav h1{
 .socials a:visited{
   color: blue;
 }
+/* ---------- Footer ---------- */
+footer{
+  height: 5vh;
+  width: 85%;
+  float: right;
+  border-top: 1px blue solid;
+}
+footer li{
+  float: left;
+  width: 25%;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  padding-left: 50px; 
+}
 /* ---------- Home Page ---------- */
 #homeSection1{
   float: right;
-  background-image: url("..//assets/images/homeImageOne.jpg");
+  background-image: url("assets/images/homeImageOne.jpg");
   background-repeat: no-repeat;
   background-color: lightgray;
   background-size: cover;
@@ -170,7 +212,7 @@ nav h1{
   position: absolute;
   bottom: -15px;
   background-repeat: no repeat;
-  background-image: url("..//assets/images/homeSale.jpg");
+  background-image: url("assets/images/homeSale.jpg");
   background-size: 100% 100%;
   right: 0;
   font-size: 0.9em;
@@ -212,6 +254,22 @@ nav h1{
   box-shadow: 0 2px 4px;
 }
 /* ---------- Shop Page ---------- */
+#shopButton{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.829);
+  border: 1px solid black;
+  width: 60%;
+  height: 30%;
+  text-align: center;
+  padding-top: 5%; 
+  box-shadow: 0 2px 4px;
+  font-size: 2em;
+  text-decoration: underline;
+  cursor: pointer;
+}
 #shopTitle{
   height: 8vh;
   width: 90%;
@@ -354,6 +412,54 @@ nav h1{
   margin-left: 10%;
   border: blue .5px solid;
 }
+/* ---------- Careers Page ---------- */
+/* Careers Page pop-up */
+#careersPopup{
+  position: fixed;
+  text-align: center;
+  height: 80vh;
+  width: 30vw;
+  border: black 2px solid;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: .5s;
+  box-shadow: 0 2px 4px;
+  padding: 20px;
+}
+#careersPopupButtonEnter{
+  height: 25%;
+  width: 50%;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 2px 4px;
+}
+#careersPopupButtonClose{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(0,0);
+  height: 30px;
+  width: 60px;
+  background-color: red;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+#careersMessage{
+  position: fixed;
+  text-align: center;
+  height: 80vh;
+  width: 60vw;
+  border: black 2px solid;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: .5s;
+  box-shadow: 0 2px 4px;
+  padding: 20px;
+}
 /* Careers Page Content */
 #careers{
   border: black 3px solid;
@@ -361,7 +467,7 @@ nav h1{
   width: 90%;
   height: 95vh;
   position: relative;
-  background: url("homeImageOne.jpg");
+  background: url("assets/images/homeImageOne.jpg");
   background-size: 100%;
   background-repeat: no-repeat;  
 }
