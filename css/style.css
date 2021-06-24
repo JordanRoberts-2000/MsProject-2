@@ -211,3 +211,66 @@ nav h1{
   background-color: rgba(0, 0, 255, 0.8);
   box-shadow: 0 2px 4px;
 }
+/* ---------- Shop Page ---------- */
+#shopTitle{
+  height: 8vh;
+  width: 90%;
+  background-color: blue;
+  float: right;
+  padding-left: 50px;
+  font-size: 2em;
+  border: solid black 5px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#shop{
+  height: 150vh;
+  width: 90%;
+  float: right;
+}
+#shop ul{
+  width: 100%;
+  height: 100%;
+}
+#shop li{
+  position: relative;
+}
+#shop h1{
+  background-color: rgba(0, 0, 0);
+  opacity: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 1s;
+  font-size: 2em;
+  text-align: center;
+  padding-top:40%;
+  border: 2px darkgreen dashed;
+}
+#photoSection1{
+  height: 50%;
+  width: 100%;
+  border: blue 1px solid;
+}
+#photoSection1 li{
+  float: left;
+}
+#photoSection2{
+  height: 50%;
+  width: 100%;
+  border: blue 1px solid;
+}
+#photoSection2 li{
+  float: right;
+}
+.small{
+  width: 20%;
+  height: 50%;
+  border: black .5px solid;
+}
+.big{
+  width: 40%;
+  height: 100%;
+  border: black solid .5px;
+}
