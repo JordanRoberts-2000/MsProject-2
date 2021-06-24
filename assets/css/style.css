@@ -10,10 +10,38 @@ body{
   font-size: 1em;
   background-color: rgb(238, 236, 236);
 }
+/* pop ups */
+.Pcontainer{
+  transition: 0.3s;
+  height: 100vh;
+  width: 100vw;
+  background-color:rgba(0, 0, 0, 0.349);
+  position: fixed;
+  z-index: 10;
+}
 .hide{
   display: none;
 }
-/* navbar */
+.signUp{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  height: 80vh;
+  width: 30vw;
+  border: 3px black solid;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+.FsignUp h1{
+  opacity: 0;
+  font-size: 1em;
+}
+/* ---------- Navbar ---------- */
 nav{
   height: 100vh;
   width: 10vw;
@@ -33,6 +61,91 @@ nav h1{
   height: 20vh;
   border: black 2px solid;
 }
+.profile p{
+  height: 15%;
+  font-size: 80%;
+}
+.profileImg{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  border: 1px black solid;
+}
+.profileImg img{
+  border-radius: 20px;
+}
+.profileButtons{
+  height: 25%;
+}
+.profileButtons button{
+  color: blue;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 2px 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+/* Navbar navigation */
+.navigation{
+  height: 55vh;
+  border: black 1px solid;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+}
+.hover:hover{
+    color: rgba(0, 0, 255);
+    transition: 1s;
+    font-size: 110%;
+}
+/* Navbar Settings */
+.settings{
+  transition: .6s;
+}
+.settingsMenu{
+  color: darkgreen;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  transition: .6s;
+  width: 100%; 
+}
+.settingsMenu li{
+  padding: 10px;
+  width: 100%;
+}
+.settingsMenu button{
+  color: darkgreen;
+  box-shadow: 0 2px 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 2px; 
+  cursor: pointer;
+}
+.settingsMenu input{
+  color: darkgreen;
+  box-shadow: 0 2px 4px;
+}
+.settingsMenu select{
+  color: darkgreen;
+  box-shadow: 0 2px 4px;
+  cursor: pointer;
+}
+/* Settings Font Type */
+.active{
+  transform: rotateX(0);
+}
+.fonts{
+  width: 90%;
+}
+/* Settings Font Size */
+.settingsMenu input[type=range] {
+  width: 75%;
+  cursor: pointer;
+}
 /* Navbar socials */
 .socials{
   font-size: 3em;
@@ -43,7 +156,6 @@ nav h1{
   border: black 1px solid;
 }
 .socials li{
-  text-align: centre;
   float: left;
   height: 10vh;
   width: 50%;
@@ -66,8 +178,386 @@ footer{
 footer li{
   float: left;
   width: 25%;
-  /*text-align: center;*/
   text-decoration: underline;
   text-decoration-color: blue;
   padding-left: 50px; 
+}
+/* ---------- Home Page ---------- */
+#homeSection1{
+  float: right;
+  background-image: url("..//assets/images/homeImageOne.jpg");
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 90%;
+  height: 90vh;
+  border: black 2px solid;
+  position: relative;
+}
+#homeInfo{
+  border: black .5px solid;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  height: 80%;
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 10px;
+}
+#homeAd{
+  border: black .5px solid;
+  position: absolute;
+  bottom: -15px;
+  background-repeat: no-repeat;
+  background-image: url("..//assets/images/homeSale.jpg");
+  background-size: 100% 100%;
+  right: 0;
+  font-size: 0.9em;
+  padding: 2px;
+  height: 10%;
+  width: 40%;
+  z-index: 1;
+}
+#homeSection2{
+  border-top: blue 1px solid;
+  height: 70vh;
+  width: 90%;
+  float: right;
+  position: relative;
+  z-index: -1;
+  padding: 10px;
+  padding-top: 15px;
+}
+#homeSection2 a:visited{
+  color: blue;
+}
+#map{
+  position: absolute;
+  width: 35%;
+  height: 55vh;
+  border: 2px solid lightblue;
+  top: 10%;
+  left: 1%;
+  box-shadow: 0 2px 4px;
+}
+#homeRoles{
+  position: absolute;
+  width: 55%;
+  height: 55vh;
+  border: 2px solid rgb(9, 37, 46);
+  top: 15%;
+  right: 1%;
+  background-color: rgba(0, 0, 255, 0.8);
+  box-shadow: 0 2px 4px;
+}
+#homeRoles h1{
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+/* ---------- Shop Page ---------- */
+#shopButton{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.829);
+  border: 1px solid black;
+  width: 60%;
+  height: 30%;
+  text-align: center;
+  padding-top: 5%; 
+  box-shadow: 0 2px 4px;
+  font-size: 2em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#shopTitle{
+  height: 8vh;
+  width: 90%;
+  background-color: blue;
+  float: right;
+  padding-left: 50px;
+  font-size: 2em;
+  border: solid black 5px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#shop{
+  height: 150vh;
+  width: 90%;
+  float: right;
+}
+#shop ul{
+  width: 100%;
+  height: 100%;
+}
+#shop li{
+  position: relative;
+}
+#shop h1{
+  background-color: rgba(0, 0, 0);
+  opacity: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 1s;
+  font-size: 2em;
+  text-align: center;
+  padding-top:40%;
+  border: 2px darkgreen dashed;
+}
+#photoSection1{
+  height: 50%;
+  width: 100%;
+  border: blue 1px solid;
+}
+#photoSection1 li{
+  float: left;
+}
+#photoSection2{
+  height: 50%;
+  width: 100%;
+  border: blue 1px solid;
+}
+#photoSection2 li{
+  float: right;
+}
+.small{
+  width: 20%;
+  height: 50%;
+  border: black .5px solid;
+}
+.big{
+  width: 40%;
+  height: 100%;
+  border: black solid .5px;
+}
+/* ---------- Blog Page ---------- */
+.dot{
+  height: 1em;
+  width: 1em;
+  border: black 2px solid;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 2px 4px;
+  cursor: pointer;
+}
+#blog{
+  float: right;
+  width: 90%;
+  height: 40vh;
+  position: relative;
+  border: black 3px solid;
+}
+#blog img{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.dominantImg img{
+  z-index: 3;
+}
+#blog h1{
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: absolute;
+  font-size: 2em;
+}
+#movingTitle{
+  z-index: 2;
+}
+#selectedTitle{
+  z-index: 4;
+}
+#blogBar{
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  bottom: 0;
+  z-index: 10;
+}
+#blogBar ul{
+  width: 100%;
+  height: 100%;
+}
+#blogBar li{
+  text-align: center;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.blogContent{
+  float: right;
+  width: 90%;
+  height: 130vh;
+  border: black 3px solid;
+}
+.blogContent h3{
+  width: 40%;
+  border-top: black dotted 2px;
+  border-bottom: black dotted 2px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 30%;
+  padding: 8px;
+}
+.blogContent p{
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  border: blue .5px solid;
+}
+/* ---------- Careers Page ---------- */
+/* Careers Page pop-up */
+#careersPopup{
+  position: fixed;
+  text-align: center;
+  height: 80vh;
+  width: 30vw;
+  border: black 2px solid;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: .5s;
+  box-shadow: 0 2px 4px;
+  padding: 20px;
+}
+#careersPopupButtonEnter{
+  height: 25%;
+  width: 50%;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 2px 4px;
+}
+#careersPopupButtonClose{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(0,0);
+  height: 30px;
+  width: 60px;
+  background-color: red;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+#careersMessage{
+  position: fixed;
+  text-align: center;
+  height: 80vh;
+  width: 60vw;
+  border: black 2px solid;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: .5s;
+  box-shadow: 0 2px 4px;
+  padding: 20px;
+}
+/* Careers Page Content */
+#careers{
+  border: black 3px solid;
+  float: right;
+  width: 90%;
+  height: 95vh;
+  position: relative;
+  background: url("..//assets/images/homeImageOne.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;  
+}
+#careers ul{
+  position: absolute;
+  width: 100%;
+  /*border: red 2px solid;*/
+  top: 50%;
+  transform: translateY(-50%);
+}
+#careers li{
+  position: relative;
+  float: left;
+  width: 27%;
+  height: 45vh;
+  margin: 3%; 
+  border: black solid 2px;
+  box-shadow: 0 2px 4px;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: orange;
+}
+#careers button{
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25%;
+  width: 50%;
+  box-shadow: 0 2px 4px;
+  position: absolute;
+  bottom: 30%;
+  font-size: 1em;
+  cursor: pointer;
+}
+/* ----Responsive Design 1300px---- */
+@media screen and (max-width: 1300px){
+  .profileButtons{
+    position: absolute;
+    bottom: 0;
+  }
+  #shop h1{
+    font-size: 4em;
+  }
+}
+/* ----Responsive Design 1100px---- */
+@media screen and (max-width: 1100px){
+  #shop h1{
+    font-size: 5em;
+  }
+  .small{
+  width: 33.3333333%;
+  height: 50%;
+  border: black .5px solid;
+  }
+  .big{
+    width: 33.3333333%;
+    height: 50%;
+    border: black solid .5px;
+  }
+  #photoSection2 li{
+  float: left;
+  }
+  .medium{
+    width: 50%;
+  }
+  nav{
+    width: 20vw;
+  }
+  #shop{
+    width: 80%;
+  }
+  #shopTitle{
+    width: 80%;
+  }
+  #homeSection1{
+    width: 80%;
+  }
+  #homeSection2{
+    width: 80%;
+  }
+  #blog{
+    width: 80%;
+  }
+  .blogContent{
+    width: 80%;
+  }
+  #careers{
+    width: 80%;
+    font-size: .5em;
+  }
 }

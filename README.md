@@ -101,6 +101,7 @@ I had my css code validated here:![https://jigsaw.w3.org/css-validator/](https:/
 I had all my html code validated here:![https://validator.w3.org/](https://validator.w3.org/)
 I had all my JavaScript validated here:![https://beautifytools.com/javascript-validator.php]
 I corrected all errors/mistakes. Now all code is valid
+![proof of validation](assets/images/2021-06-24 (9).png)
 ---
 # Deployment
 I wrote the code in gitpod and committed frequently and pushed it to github(cloud)
