@@ -144,7 +144,7 @@ nav h1{
 /* ---------- Home Page ---------- */
 #homeSection1{
   float: right;
-  background-image: url("homeImageOne.jpg");
+  background-image: url("..//assets/images/homeImageOne.jpg");
   background-repeat: no-repeat;
   background-color: lightgray;
   background-size: cover;
@@ -170,7 +170,7 @@ nav h1{
   position: absolute;
   bottom: -15px;
   background-repeat: no repeat;
-  background-image: url("homeSale.jpg");
+  background-image: url("..//assets/images/homeSale.jpg");
   background-size: 100% 100%;
   right: 0;
   font-size: 0.9em;
