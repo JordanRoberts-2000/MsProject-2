@@ -1,0 +1,143 @@
+/* Preferences */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+  font-family: Pangolin;
+  font-size: 1em;
+  background-color: rgb(238, 236, 236);
+}
+.hide{
+  display: none;
+}
+/* ---------- Navbar ---------- */
+nav{
+  height: 100vh;
+  width: 10vw;
+  float: left;
+  border: black solid 2px;
+  position: fixed;
+  text-align: center;
+}
+/* Navbar Title */
+nav h1{
+  height: 5vh;
+  border: black 2px solid;
+  font-size: 1.1em;
+}
+/* Navbar profile */
+.profile{
+  height: 20vh;
+  border: black 2px solid;
+}
+.profile p{
+  height: 15%;
+  font-size: 80%;
+}
+.profileImg{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  border: 1px black solid;
+}
+.profileImg img{
+  border-radius: 20px;
+}
+.profileButtons{
+  height: 25%;
+}
+.profileButtons button{
+  color: blue;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 2px 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+/* Navbar navigation */
+.navigation{
+  height: 55vh;
+  border: black 1px solid;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+}
+.hover:hover{
+    color: rgba(0, 0, 255);
+    transition: 1s;
+    font-size: 110%;
+}
+/* Navbar Settings */
+.settings{
+  transition: .6s;
+}
+.settingsMenu{
+  color: darkgreen;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  transition: .6s;
+  width: 100%; 
+}
+.settingsMenu li{
+  padding: 10px;
+  width: 100%;
+}
+.settingsMenu button{
+  color: darkgreen;
+  box-shadow: 0 2px 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 2px; 
+  cursor: pointer;
+}
+.settingsMenu input{
+  color: darkgreen;
+  box-shadow: 0 2px 4px;
+}
+.settingsMenu select{
+  color: darkgreen;
+  box-shadow: 0 2px 4px;
+  cursor: pointer;
+}
+/* Settings Font Type */
+.active{
+  transform: rotateX(0);
+}
+.fonts{
+  width: 90%;
+}
+/* Settings Font Size */
+.settingsMenu input[type=range] {
+  width: 75%;
+  cursor: pointer;
+}
+/* Navbar socials */
+.socials{
+  font-size: 3em;
+  color: blue;
+}
+.socials ul{
+  height: 20vh;
+  border: black 1px solid;
+}
+.socials li{
+  text-align: centre;
+  float: left;
+  height: 10vh;
+  width: 50%;
+  cursor: pointer;
+}
+.socials li:hover{
+  transition: 1s;
+  font-size: 90%;
+}
+.socials a:visited{
+  color: blue;
+}
