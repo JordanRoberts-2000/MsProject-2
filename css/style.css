@@ -501,3 +501,60 @@ footer li{
   font-size: 1em;
   cursor: pointer;
 }
+/* ----Responsive Design 1300px---- */
+@media screen and (max-width: 1300px){
+  .profileButtons{
+    position: absolute;
+    bottom: 0;
+  }
+  #shop h1{
+    font-size: 4em;
+  }
+}
+/* ----Responsive Design 1100px---- */
+@media screen and (max-width: 1100px){
+  #shop h1{
+    font-size: 5em;
+  }
+  .small{
+  width: 33.3333333%;
+  height: 50%;
+  border: black .5px solid;
+  }
+  .big{
+    width: 33.3333333%;
+    height: 50%;
+    border: black solid .5px;
+  }
+  #photoSection2 li{
+  float: left;
+  }
+  .medium{
+    width: 50%;
+  }
+  nav{
+    width: 20vw;
+  }
+  #shop{
+    width: 80%;
+  }
+  #shopTitle{
+    width: 80%;
+  }
+  #homeSection1{
+    width: 80%;
+  }
+  #homeSection2{
+    width: 80%;
+  }
+  #blog{
+    width: 80%;
+  }
+  .blogContent{
+    width: 80%;
+  }
+  #careers{
+    width: 80%;
+    font-size: .5em;
+  }
+}
