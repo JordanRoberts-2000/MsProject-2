@@ -354,3 +354,44 @@ nav h1{
   margin-left: 10%;
   border: blue .5px solid;
 }
+/* Careers Page Content */
+#careers{
+  border: black 3px solid;
+  float: right;
+  width: 90%;
+  height: 95vh;
+  position: relative;
+  background: url("homeImageOne.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;  
+}
+#careers ul{
+  position: absolute;
+  width: 100%;
+  /*border: red 2px solid;*/
+  top: 50%;
+  transform: translateY(-50%);
+}
+#careers li{
+  position: relative;
+  float: left;
+  width: 27%;
+  height: 45vh;
+  margin: 3%; 
+  border: black solid 2px;
+  box-shadow: 0 2px 4px;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: orange;
+}
+#careers button{
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25%;
+  width: 50%;
+  box-shadow: 0 2px 4px;
+  position: absolute;
+  bottom: 30%;
+  font-size: 1em;
+  cursor: pointer;
+}
