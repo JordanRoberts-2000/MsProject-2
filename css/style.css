@@ -253,6 +253,11 @@ footer li{
   background-color: rgba(0, 0, 255, 0.8);
   box-shadow: 0 2px 4px;
 }
+#homeRoles h1{
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
 /* ---------- Shop Page ---------- */
 #shopButton{
   position: absolute;
