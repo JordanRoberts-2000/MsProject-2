@@ -186,7 +186,7 @@ footer li{
 /* ---------- Home Page ---------- */
 #homeSection1{
   float: right;
-  background-image: url("assets/images/homeImageOne.jpg");
+  background-image: url("..//assets/images/homeImageOne.jpg");
   background-repeat: no-repeat;
   background-color: lightgray;
   background-size: cover;
@@ -212,7 +212,7 @@ footer li{
   position: absolute;
   bottom: -15px;
   background-repeat: no repeat;
-  background-image: url("assets/images/homeSale.jpg");
+  background-image: url("..//assets/images/homeSale.jpg");
   background-size: 100% 100%;
   right: 0;
   font-size: 0.9em;
@@ -467,7 +467,7 @@ footer li{
   width: 90%;
   height: 95vh;
   position: relative;
-  background: url("assets/images/homeImageOne.jpg");
+  background: url("..//assets/images/homeImageOne.jpg");
   background-size: 100%;
   background-repeat: no-repeat;  
 }
