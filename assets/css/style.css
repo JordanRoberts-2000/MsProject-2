@@ -13,6 +13,7 @@ body{
 .hide{
   display: none;
 }
+/* navbar */
 nav{
   height: 100vh;
   width: 10vw;
@@ -54,4 +55,19 @@ nav h1{
 }
 .socials a:visited{
   color: blue;
+}
+/* ---------- Footer ---------- */
+footer{
+  height: 5vh;
+  width: 85%;
+  float: right;
+  border-top: 1px blue solid;
+}
+footer li{
+  float: left;
+  width: 25%;
+  /*text-align: center;*/
+  text-decoration: underline;
+  text-decoration-color: blue;
+  padding-left: 50px; 
 }
