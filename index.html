@@ -11,41 +11,68 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav>
       <!-- Company Name -->
       <h1>
         R8 Robotics
       </h1>
       <!-- Profile -->
-      <div>
+      <div class="profile">
         <p>profile</p>
-        <div>
+        <div  class="profileImg">
           <img src="assets/images/profile.png" width="100%" height="100%" border-radius="20px">
         </div>
-        <div>
-          <button>sign up</button>
-          <button>sign in</button>
-          <button class="hide">Log Out</button>
+        <div class="profileButtons">
+          <button class="PsignUp">sign up</button>
+          <button class="PsignIn">sign in</button>
+          <button class="logOut hide">Log Out</button>
         </div>
       </div>
-      <ul>
+      <!-- Page Navigation -->
+      <div class="navigation">
+        <ul>
           <li>
-            <a href="">Home</a>
+            <a class="hover" href="">Home</a>
           </li>
           <li>
-            <a href="shop.html">Shop</a>
+            <a class="hover" href="shop.html">Shop</a>
           </li>
           <li>
-            <a href="blog.html">Blog</a>
+            <a class="hover" href="blog.html">Blog</a>
           </li>
           <li>
-            <a href="careers.html">Careers<a>
+            <a class="hover" href="careers.html">Careers<a>
           </li>
-          <li>
+          <li  class="settings">
             Settings
           </li>
         </ul>
-        <div class="socials">
+        <!-- Settings Expansion -->
+        <div class="settingsMenu" class="active">
+          <ul>
+            <li>
+              Night Mode<br>
+              <button class="on">On</button>
+              <button class="off">Off</button>
+            </li>
+            <li>
+              <select class="fonts">
+                <option disabled selected="ChooseFont">Select Font</option>
+                <option class="Pangolin"value="Pangolin">Pangolin(current)</option>
+                <option class="Kirang Haerang" value="Kirang Haerang">Kirang Haerang</option>
+                <option class="Helvetica" value="Helvetica">Helvetica</option>
+              </select>
+            </li>
+            <li>
+              Font Size<br>
+              <input type="range" class="fontSize" step="1" min="8" max="12">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Social Links -->
+      <div class="socials">
         <ul>
           <li>
             <a><i class="fab fa-twitter-square"></i></a>
