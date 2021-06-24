@@ -141,3 +141,73 @@ nav h1{
 .socials a:visited{
   color: blue;
 }
+/* ---------- Home Page ---------- */
+#homeSection1{
+  float: right;
+  background-image: url("homeImageOne.jpg");
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 90%;
+  height: 90vh;
+  border: black 2px solid;
+  position: relative;
+}
+#homeInfo{
+  border: black .5px solid;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  height: 80%;
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 10px;
+}
+#homeAd{
+  border: black .5px solid;
+  position: absolute;
+  bottom: -15px;
+  background-repeat: no repeat;
+  background-image: url("homeSale.jpg");
+  background-size: 100% 100%;
+  right: 0;
+  font-size: 0.9em;
+  padding: 2px;
+  height: 10%;
+  width: 40%;
+  z-index: 1;
+}
+#homeSection2{
+  border-top: blue 1px solid;
+  height: 70vh;
+  width: 90%;
+  float: right;
+  position: relative;
+  z-index: -1;
+  padding: 10px;
+  padding-top: 15px;
+}
+#homeSection2 a:visited{
+  color: blue;
+}
+#map{
+  position: absolute;
+  width: 35%;
+  height: 55vh;
+  border: 2px solid lightblue;
+  top: 10%;
+  left: 1%;
+  box-shadow: 0 2px 4px;
+}
+#homeRoles{
+  position: absolute;
+  width: 55%;
+  height: 55vh;
+  border: 2px solid rgb(9, 37, 46);
+  top: 15%;
+  right: 1%;
+  background-color: rgba(0, 0, 255, 0.8);
+  box-shadow: 0 2px 4px;
+}
