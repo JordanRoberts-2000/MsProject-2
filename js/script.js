@@ -112,3 +112,4 @@ function initMap() {
     $("#blogButton3").css("background-color", "rgba(173, 216, 230, 0.7)");
     }, 1600);
   });
+  
