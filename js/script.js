@@ -112,4 +112,116 @@ function initMap() {
     $("#blogButton3").css("background-color", "rgba(173, 216, 230, 0.7)");
     }, 1600);
   });
-  
+
+// -- SignUp -- //
+$(document).ready(function(){
+  // -- SignUp, Username --
+    $(".enter").on("click", function() {
+      let entry = 0
+      if($(".input1").val().length == 0){
+        $(".successGuideU").css("opacity", 1);
+        $(".successGuideU").css("color", "red")
+        $(".successGuideU").html("Username Required");
+      }else if($(".input1").val().length != 0 && $(".input1").val().length <=6){
+        $(".successGuideU").css("opacity", 1);
+        $(".successGuideU").css("color", "red")
+        $(".successGuideU").html("Too Short");
+      }else if($(".input1").val().length >= 14){
+        $(".successGuideU").css("opacity", 1);
+          $(".successGuideU").css("color", "red")
+          $(".successGuideU").html("Too Long");
+      }else{
+        $(".successGuideU").css("opacity", 1);
+        $(".successGuideU").css("color", "green");
+        $(".successGuideU").html("Username Accepted");
+        localStorage.setItem("username",$(".input1").val())
+        entry++;
+      };
+      // --Sign Up, email --
+      let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //not my code:https://www.youtube.com/watch?v=HzJngc-Se9Q
+      if(($(".input2").val().match(pattern))){
+        $(".successGuideE").css("opacity", 1);
+        $(".successGuideE").css("color", "green");
+        $(".successGuideE").html("Email Accepted");
+        entry++;
+      }else{
+        $(".successGuideE").css("opacity", 1);
+        $(".successGuideE").css("color", "red");
+        $(".successGuideE").html("Email Not Accepted");
+      };
+      // --Sign Up, password --
+      if($(".input3").val().length == 0){
+        $(".successGuideP").css("opacity", 1);
+        $(".successGuideP").css("color", "red");
+        $(".successGuideP").html("Password Required");
+      }else{
+        $(".successGuideP").css("opacity", 1);
+        $(".successGuideP").css("color", "green");
+        $(".successGuideP").html("Password Accepted");
+        entry++;
+        localStorage.setItem("password",$(".input3").val())
+      };
+      if(entry == 3){
+        $(".Pcontainer").addClass("hide");
+        loggedIn();
+      };
+    });
+  });
+
+// -- Sign In --
+    $(document).ready(function(){
+      $(".signInE").on("click", function() {
+        let entry2 = 0;
+        if($(".signInU").val() == localStorage.getItem("username")){
+          $(".signInError1").css("opacity", 1);
+          $(".signInError1").css("color", "green");
+          $(".signInError1").html("Username Recognized");
+          entry2++;
+        }else{
+          $(".signInError1").css("opacity", 1);
+          $(".signInError1").css("color", "red");
+          $(".signInError1").html("Username Not Recognized");
+        };
+        if($(".signInP").val() == localStorage.getItem("password")){
+          entry2++;
+        }else{
+          if($(".signInU").val() == localStorage.getItem("username")){
+            $(".signInError2").css("opacity", 1);
+            $(".signInError2").css("color", "red");
+            $(".signInError2").html("Password Incorrect");
+          };
+        };
+        if(entry2 == 2){
+          console.log("registered");
+          loggedIn();
+          $(".Pcontainer2").addClass("hide");
+        };
+      });
+    });
+
+//Sign /Up
+$(document).ready(function(){
+  $(".PsignUp").on("click", function() {
+    $(".Pcontainer").removeClass("hide");
+  });
+  $(".close").on("click", function() {
+    $(".Pcontainer").addClass("hide");
+  });
+});
+//sign in 
+$(document).ready(function(){
+  $(".PsignIn").on("click", function() {
+    $(".Pcontainer2").removeClass("hide");
+  });
+});
+$(document).ready(function(){
+  $(".close").on("click", function() {
+    $(".Pcontainer2").addClass("hide");
+  });
+});
+
+$(document).ready(function(){
+  $(".settings").on("mouseover", function() {
+    $(".settingsMenu").addClass("active");
+  });
+});
